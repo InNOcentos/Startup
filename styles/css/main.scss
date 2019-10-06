@@ -180,16 +180,24 @@ a {
          margin-top: 50px;
          padding: 18px 35px;
          border: 2px solid #fff;
-         font-size: 16px;
-         line-height: 24px;
-         font-weight: 400;
-         text-transform: uppercase;
+
+         a {
+            color: #fff;
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+         }
 
          &:hover {
             background-color: #fff;
-            // border: 2px solid #000;
-            color: #000;
             cursor: pointer;
+
+            a {
+               color: #000;
+            }
+            
+            
          }
       }
    }
@@ -265,12 +273,13 @@ a {
             font-size: 30px;
             white-space: wrap;
          }
+
          span {
             font-size: 15px;
          }
-         b {
-            
-         }
+
+         b {}
+
          &-started {
             font-size: 13px;
             padding: 14px 30px;
@@ -363,12 +372,6 @@ a {
                background-repeat: no-repeat;
                background-position: center;
             }
-
-            // &:after {
-            //    width: 43px;
-            //    height: 40px;
-            //    background: url('../images/fa-font.png');
-            // }
          }
 
          .rock {
@@ -556,9 +559,9 @@ a {
          }
 
          @media (max-width: $screen-lg-max) {
-               flex-direction: column;
+            flex-direction: column;
 
-            
+
          }
       }
    }
@@ -572,11 +575,13 @@ a {
    background-color: #fff;
    color: #555555;
 
-   .container {}
+   .container {
+      padding: 100px 0;
+   }
 
    .heading {
       text-align: center;
-      padding: 100px 0 70px 0;
+      padding-bottom: 70px;
 
       h2 {
          font-size: 20px;
@@ -597,7 +602,7 @@ a {
          }
       }
 
-      .heading-nav-list {
+      &-nav-list {
          @include font-roboto;
 
          list-style: none;
@@ -635,7 +640,7 @@ a {
       justify-content: space-between;
 
 
-      .gallery-item {
+      &-item {
          position: relative;
          height: 320px;
          margin-bottom: 30px;
@@ -652,7 +657,7 @@ a {
             }
          }
 
-         .gallery-item-img {
+         &-img {
             height: 100%;
          }
 
@@ -733,3 +738,12 @@ a {
 }
 
 // === / Works ===
+
+// === Touch ===
+
+
+
+
+
+
+// === / Touch ===

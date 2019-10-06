@@ -432,15 +432,18 @@ a {
     .main-header .header-content-started {
       margin-top: 50px;
       padding: 18px 35px;
-      border: 2px solid #fff;
-      font-size: 16px;
-      line-height: 24px;
-      font-weight: 400;
-      text-transform: uppercase; }
+      border: 2px solid #fff; }
+      .main-header .header-content-started a {
+        color: #fff;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: bold;
+        text-transform: uppercase; }
       .main-header .header-content-started:hover {
         background-color: #fff;
-        color: #000;
         cursor: pointer; }
+        .main-header .header-content-started:hover a {
+          color: #000; }
   @media (max-width: 1199px) {
     .main-header .main-navigation {
       padding-left: 30px;
@@ -694,9 +697,11 @@ a {
 .works {
   background-color: #fff;
   color: #555555; }
+  .works .container {
+    padding: 100px 0; }
   .works .heading {
     text-align: center;
-    padding: 100px 0 70px 0; }
+    padding-bottom: 70px; }
     .works .heading h2 {
       font-size: 20px;
       line-height: 24px;
@@ -712,7 +717,7 @@ a {
         background-color: #555555;
         bottom: -125%;
         left: 48%; }
-    .works .heading .heading-nav-list {
+    .works .heading-nav-list {
       font-family: 'Roboto Slab', sans-serif;
       list-style: none;
       display: -webkit-box;
@@ -724,14 +729,14 @@ a {
       font-size: 16px;
       font-weight: 400;
       line-height: 24px; }
-      .works .heading .heading-nav-list .heading-nav-item a {
+      .works .heading-nav-list .heading-nav-item a {
         color: #555555; }
-        .works .heading .heading-nav-list .heading-nav-item a:hover {
+        .works .heading-nav-list .heading-nav-item a:hover {
           color: #c0301c;
           -webkit-transition: .2s;
           -o-transition: .2s;
           transition: .2s; }
-      .works .heading .heading-nav-list .heading-nav-item + .heading-nav-item {
+      .works .heading-nav-list .heading-nav-item + .heading-nav-item {
         margin-left: 20px; }
   .works .gallery * {
     color: #fff; }
@@ -746,18 +751,18 @@ a {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between; }
-    .works .gallery .gallery-item {
+    .works .gallery-item {
       position: relative;
       height: 320px;
       margin-bottom: 30px;
       background-color: #c0301c; }
-      .works .gallery .gallery-item:hover .gallery-item-img {
+      .works .gallery-item:hover .gallery-item-img {
         opacity: 0.3; }
-      .works .gallery .gallery-item:hover .gallery-item-text {
+      .works .gallery-item:hover .gallery-item-text {
         opacity: 1; }
-      .works .gallery .gallery-item .gallery-item-img {
+      .works .gallery-item-img {
         height: 100%; }
-      .works .gallery .gallery-item .gallery-item-text {
+      .works .gallery-item .gallery-item-text {
         position: absolute;
         z-index: 20;
         top: 0;
@@ -765,17 +770,17 @@ a {
         left: 35%;
         top: 35%;
         text-align: center; }
-        .works .gallery .gallery-item .gallery-item-text h4 {
+        .works .gallery-item .gallery-item-text h4 {
           font-size: 18px;
           font-weight: bold;
           line-height: 24px;
           margin-bottom: 5px; }
-        .works .gallery .gallery-item .gallery-item-text b {
+        .works .gallery-item .gallery-item-text b {
           font-family: 'Roboto Slab', sans-serif;
           font-size: 12px;
           font-weight: 400;
           line-height: 24px; }
-        .works .gallery .gallery-item .gallery-item-text a {
+        .works .gallery-item .gallery-item-text a {
           font-family: 'Roboto Slab', sans-serif;
           padding: 10px 10px 10px 20px;
           background-color: #fff;
@@ -789,7 +794,7 @@ a {
           color: #c0301c;
           position: relative;
           text-align: start; }
-          .works .gallery .gallery-item .gallery-item-text a::after {
+          .works .gallery-item .gallery-item-text a::after {
             content: '';
             position: absolute;
             background-image: url("../images/fa-angle-left.png");
@@ -797,7 +802,7 @@ a {
             height: 10px;
             bottom: 40%;
             left: 70%; }
-          .works .gallery .gallery-item .gallery-item-text a:hover {
+          .works .gallery-item .gallery-item-text a:hover {
             -webkit-transform: scale(1.2) rotate(360deg);
             -ms-transform: scale(1.2) rotate(360deg);
             transform: scale(1.2) rotate(360deg);
@@ -805,9 +810,9 @@ a {
             -o-transition: 0.8s ease-out;
             transition: 0.8s ease-out;
             text-decoration: underline; }
-      .works .gallery .gallery-item:nth-child(7) {
+      .works .gallery-item:nth-child(7) {
         margin: 0; }
-      .works .gallery .gallery-item:nth-child(8) {
+      .works .gallery-item:nth-child(8) {
         margin: 0; }
-      .works .gallery .gallery-item:last-child {
+      .works .gallery-item:last-child {
         margin: 0; }
