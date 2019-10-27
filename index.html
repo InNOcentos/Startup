@@ -6,6 +6,11 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
    <title>Document</title>
+
+   <!-- <link rel="stylesheet" href="styles/css/reset.css"> -->
+   <link rel="stylesheet" href="styles/css/reset.css">
+   <link rel="stylesheet" href="libs/owlCarousel2/assets/owl.carousel.css">
+   <link rel="stylesheet" href="libs/owlCarousel2/assets/owl.theme.default.css">
    <link rel="stylesheet" href="styles/css/main.css">
    <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto+Slab&display=swap&subset=cyrillic"
       rel="stylesheet">
@@ -21,6 +26,7 @@
             <a class="page-logo" href="#">
                <h1>Startup</h1>
             </a>
+
             <ul class="site-navigation-list">
                <li class="site-navigation-item"><a href="#">Home</a></li>
                <li class="site-navigation-item"><a href="#">Services</a></li>
@@ -29,15 +35,55 @@
                <li class="site-navigation-item"><a href="#">Blog</a></li>
                <li class="site-navigation-item"><a href="#">Clients</a></li>
                <li class="site-navigation-item"><a href="#">Contact</a></li>
+
             </ul>
+            <div class="mobile-menu"><a class="menu-btn" id="menu" href="#">
+               <span id="icon-item">&#9776;</span></a>
+            </div>
          </nav>
          <div class="header-content">
             <div class="header-content-title">
                <h2>Welcome to startup</h2>
                <span>Your favourite Creative Agency Template</span>
             </div>
-            <div class="header-content-started">
-               <a href="#">Get started</a>
+            <button class="header-content-btn" id="myBtn">Get started</button>
+            <div id="myModal" class="modal">
+               <div class="modal-content">
+                  <span class="close"></span>
+                  <h3>Acquaintance</h3>
+                  <form class="modal-form" action="#" method="get">
+                     <div class="modal-form-item">
+                        <label for="phone">Just type here your phone number:</label><br>
+                        <input type="text" name="phone" id="phone" placeholder="+7(XXX)-XXX-XX-XX">
+                     </div>
+                     <button type="submit" id="myContact">We will contact you!</button>
+                  </form>
+
+                        <!-- <form class="communication-form" action="#" method="get">
+                           <div class="form-item">
+                              <label for="username"></label>
+                              <input type="text" name="name" id="username" placeholder="Your name">
+                           </div>
+                           <div class="form-item">
+                              <label for="email"></label>
+                              <input type="text" name="e-mail" id="email" placeholder="Your e-mail">
+                           </div>
+                           <div class="form-item">
+                              <label for="subject"></label>
+                              <input type="text" name="subject" id="subject" placeholder="Your subject">
+                           </div>
+                           <div class="form-item">
+                              <label for="company-name"></label>
+                              <input type="text" name="company-name" id="company-name" placeholder="Company name">
+                           </div>
+                           <textarea name="message" id="message" placeholder="Write your message"></textarea>
+                           <div class="form-wrapper">
+                              <button type="submit" class="button">Send message</button>
+                              <p><strong>*</strong> We’ll contact you as as possible. We don’t reply on Monday.</p>
+                           </div>
+                        </form> -->
+                     
+               </div>
             </div>
          </div>
       </div>
@@ -53,7 +99,6 @@
 
       <section class="services outer">
          <div class="container">
-
             <div class="services-heading">
                <h2>Services</h2>
                <b>We offer ipsum dolor sit amet, consetetur sadipscing elitr amet</b>
@@ -112,11 +157,12 @@
                   dolore
                   aliquyam erat. Lorem ipsum dolor sit amet. Lorem ipsum eat.</p>
             </div>
-            <div class="team">
+            <div class="team owl-theme team-slider owl-carousel">
+
                <div class="team-item_container">
                   <div class="team-item">
                      <div class="team-item_img">
-                        <img src="styles/images/member-1.jpg" width="263px" height="250px" alt="">
+                        <img src="styles/images/member-1.jpg" alt="">
                      </div>
                      <ul class="team-item_social-list">
                         <li class="team-item_social-item"><a href="#"><img src="styles/images/Facebook_Logo.png"
@@ -129,6 +175,13 @@
                         <li class="team-item_social-item"><a href="#"><img src="styles/images/fa-linkedin.png"
                                  width="14px" height="14px" alt=""></a></li>
                      </ul>
+                     <div class="slide-controls">
+                        <button class="slider-button--left"></button>
+                     </div>
+                     <div class="slide-controls-responsive">
+                           <button class="slider-button--left"></button>
+                           <button class="slider-button--right"></button>
+                        </div>
                   </div>
                   <div class="team-item_write-up">
                      <h4>Md. Khalil Uddin</h4>
@@ -138,7 +191,7 @@
                <div class="team-item_container">
                   <div class="team-item">
                      <div class="team-item_img">
-                        <img src="styles/images/member-2.jpg" width="263px" height="250px" alt="">
+                        <img src="styles/images/member-2.jpg" alt="">
                      </div>
                      <ul class="team-item_social-list">
                         <li class="team-item_social-item"><a href="#"><img src="styles/images/Facebook_Logo.png"
@@ -151,6 +204,10 @@
                         <li class="team-item_social-item"><a href="#"><img src="styles/images/fa-linkedin.png"
                                  width="14px" height="14px" alt=""></a></li>
                      </ul>
+                     <div class="slide-controls-responsive">
+                           <button class="slider-button--left"></button>
+                           <button class="slider-button--right"></button>
+                        </div>
                   </div>
                   <div class="team-item_write-up">
                      <h4>Rubel Miah</h4>
@@ -160,7 +217,7 @@
                <div class="team-item_container">
                   <div class="team-item">
                      <div class="team-item_img">
-                        <img src="styles/images/member-3.jpg" width="263px" height="250px" alt="">
+                        <img src="styles/images/member-3.jpg" alt="">
                      </div>
                      <ul class="team-item_social-list">
                         <li class="team-item_social-item"><a href="#"><img src="styles/images/Facebook_Logo.png"
@@ -173,6 +230,10 @@
                         <li class="team-item_social-item"><a href="#"><img src="styles/images/fa-linkedin.png"
                                  width="14px" height="14px" alt=""></a></li>
                      </ul>
+                     <div class="slide-controls-responsive">
+                           <button class="slider-button--left"></button>
+                           <button class="slider-button--right"></button>
+                        </div>
                   </div>
                   <div class="team-item_write-up">
                      <h4>Shamim Mia</h4>
@@ -182,7 +243,7 @@
                <div class="team-item_container">
                   <div class="team-item">
                      <div class="team-item_img">
-                        <img src="styles/images/member-4.jpg" width="263px" height="250px" alt="">
+                        <img src="styles/images/member-4.jpg" alt="">
                      </div>
                      <ul class="team-item_social-list">
                         <li class="team-item_social-item"><a href="#"><img src="styles/images/Facebook_Logo.png"
@@ -195,12 +256,245 @@
                         <li class="team-item_social-item"><a href="#"><img src="styles/images/fa-linkedin.png"
                                  width="14px" height="14px" alt=""></a></li>
                      </ul>
+                     <div class="slide-controls">
+                           <button class="slider-button--right"></button>
+                        </div>
+                        <div class="slide-controls-responsive">
+                              <button class="slider-button--left"></button>
+                              <button class="slider-button--right"></button>
+                           </div>
                   </div>
                   <div class="team-item_write-up">
                      <h4>John Doe</h4>
                      <span>Front-end Developer</span>
                   </div>
                </div>
+
+
+
+               <div class="team-item_container">
+                  <div class="team-item">
+                     <div class="team-item_img">
+                        <img src="styles/images/member-1.jpg" alt="">
+                     </div>
+                     <ul class="team-item_social-list">
+                        <li class="team-item_social-item"><a href="#"><img src="styles/images/Facebook_Logo.png"
+                                 width="9px" height="16px" alt=""></a></li>
+                        <li class="team-item_social-item"><a href="#"><img
+                                 src="styles/images/Twitter_Logo_Silhouette.png" width="17px" height="14px" alt=""></a>
+                        </li>
+                        <li class="team-item_social-item"><a href="#"><img src="styles/images/Google_Plus_Logo.png"
+                                 width="17px" height="16px" alt=""></a></li>
+                        <li class="team-item_social-item"><a href="#"><img src="styles/images/fa-linkedin.png"
+                                 width="14px" height="14px" alt=""></a></li>
+                     </ul>
+                     <div class="slide-controls">
+                           <button class="slider-button--left"></button>
+                        </div>
+                        <div class="slide-controls-responsive">
+                              <button class="slider-button--left"></button>
+                              <button class="slider-button--right"></button>
+                           </div>
+                  </div>
+                  <div class="team-item_write-up">
+                     <h4>Md. Khalil Uddin</h4>
+                     <span>Head of Ideas</span>
+                  </div>
+               </div>
+               <div class="team-item_container">
+                  <div class="team-item">
+                     <div class="team-item_img">
+                        <img src="styles/images/member-2.jpg" alt="">
+                     </div>
+                     <ul class="team-item_social-list">
+                        <li class="team-item_social-item"><a href="#"><img src="styles/images/Facebook_Logo.png"
+                                 width="9px" height="16px" alt=""></a></li>
+                        <li class="team-item_social-item"><a href="#"><img
+                                 src="styles/images/Twitter_Logo_Silhouette.png" width="17px" height="14px" alt=""></a>
+                        </li>
+                        <li class="team-item_social-item"><a href="#"><img src="styles/images/Google_Plus_Logo.png"
+                                 width="17px" height="16px" alt=""></a></li>
+                        <li class="team-item_social-item"><a href="#"><img src="styles/images/fa-linkedin.png"
+                                 width="14px" height="14px" alt=""></a></li>
+                     </ul>
+                     <div class="slide-controls-responsive">
+                           <button class="slider-button--left"></button>
+                           <button class="slider-button--right"></button>
+                        </div>
+                  </div>
+                  <div class="team-item_write-up">
+                     <h4>Rubel Miah</h4>
+                     <span>Lead WordPress Developer</span>
+                  </div>
+               </div>
+               <div class="team-item_container">
+                  <div class="team-item">
+                     <div class="team-item_img">
+                        <img src="styles/images/member-3.jpg" alt="">
+                     </div>
+                     <ul class="team-item_social-list">
+                        <li class="team-item_social-item"><a href="#"><img src="styles/images/Facebook_Logo.png"
+                                 width="9px" height="16px" alt=""></a></li>
+                        <li class="team-item_social-item"><a href="#"><img
+                                 src="styles/images/Twitter_Logo_Silhouette.png" width="17px" height="14px" alt=""></a>
+                        </li>
+                        <li class="team-item_social-item"><a href="#"><img src="styles/images/Google_Plus_Logo.png"
+                                 width="17px" height="16px" alt=""></a></li>
+                        <li class="team-item_social-item"><a href="#"><img src="styles/images/fa-linkedin.png"
+                                 width="14px" height="14px" alt=""></a></li>
+                     </ul>
+                     <div class="slide-controls-responsive">
+                           <button class="slider-button--left"></button>
+                           <button class="slider-button--right"></button>
+                        </div>
+                  </div>
+                  <div class="team-item_write-up">
+                     <h4>Shamim Mia</h4>
+                     <span>Sr. Web Developer</span>
+                  </div>
+               </div>
+               <div class="team-item_container">
+                  <div class="team-item">
+                     <div class="team-item_img">
+                        <img src="styles/images/member-4.jpg" alt="">
+                     </div>
+                     <ul class="team-item_social-list">
+                        <li class="team-item_social-item"><a href="#"><img src="styles/images/Facebook_Logo.png"
+                                 width="9px" height="16px" alt=""></a></li>
+                        <li class="team-item_social-item"><a href="#"><img
+                                 src="styles/images/Twitter_Logo_Silhouette.png" width="17px" height="14px" alt=""></a>
+                        </li>
+                        <li class="team-item_social-item"><a href="#"><img src="styles/images/Google_Plus_Logo.png"
+                                 width="17px" height="16px" alt=""></a></li>
+                        <li class="team-item_social-item"><a href="#"><img src="styles/images/fa-linkedin.png"
+                                 width="14px" height="14px" alt=""></a></li>
+                     </ul>
+                     <div class="slide-controls">
+                           <button class="slider-button--right"></button>
+                        </div>
+                        <div class="slide-controls-responsive">
+                              <button class="slider-button--left"></button>
+                              <button class="slider-button--right"></button>
+                           </div>
+                  </div>
+                  <div class="team-item_write-up">
+                     <h4>John Doe</h4>
+                     <span>Front-end Developer</span>
+                  </div>
+               </div>
+
+
+               <div class="team-item_container">
+                  <div class="team-item">
+                     <div class="team-item_img">
+                        <img src="styles/images/member-1.jpg" alt="">
+                     </div>
+                     <ul class="team-item_social-list">
+                        <li class="team-item_social-item"><a href="#"><img src="styles/images/Facebook_Logo.png"
+                                 width="9px" height="16px" alt=""></a></li>
+                        <li class="team-item_social-item"><a href="#"><img
+                                 src="styles/images/Twitter_Logo_Silhouette.png" width="17px" height="14px" alt=""></a>
+                        </li>
+                        <li class="team-item_social-item"><a href="#"><img src="styles/images/Google_Plus_Logo.png"
+                                 width="17px" height="16px" alt=""></a></li>
+                        <li class="team-item_social-item"><a href="#"><img src="styles/images/fa-linkedin.png"
+                                 width="14px" height="14px" alt=""></a></li>
+                     </ul>
+                     <div class="slide-controls">
+                           <button class="slider-button--left"></button>
+                        </div>
+                        <div class="slide-controls-responsive">
+                              <button class="slider-button--left"></button>
+                              <button class="slider-button--right"></button>
+                           </div>
+                  </div>
+                  <div class="team-item_write-up">
+                     <h4>Md. Khalil Uddin</h4>
+                     <span>Head of Ideas</span>
+                  </div>
+               </div>
+               <div class="team-item_container">
+                  <div class="team-item">
+                     <div class="team-item_img">
+                        <img src="styles/images/member-2.jpg" alt="">
+                     </div>
+                     <ul class="team-item_social-list">
+                        <li class="team-item_social-item"><a href="#"><img src="styles/images/Facebook_Logo.png"
+                                 width="9px" height="16px" alt=""></a></li>
+                        <li class="team-item_social-item"><a href="#"><img
+                                 src="styles/images/Twitter_Logo_Silhouette.png" width="17px" height="14px" alt=""></a>
+                        </li>
+                        <li class="team-item_social-item"><a href="#"><img src="styles/images/Google_Plus_Logo.png"
+                                 width="17px" height="16px" alt=""></a></li>
+                        <li class="team-item_social-item"><a href="#"><img src="styles/images/fa-linkedin.png"
+                                 width="14px" height="14px" alt=""></a></li>
+                     </ul>
+                     <div class="slide-controls-responsive">
+                           <button class="slider-button--left"></button>
+                           <button class="slider-button--right"></button>
+                        </div>
+                  </div>
+                  <div class="team-item_write-up">
+                     <h4>Rubel Miah</h4>
+                     <span>Lead WordPress Developer</span>
+                  </div>
+               </div>
+               <div class="team-item_container">
+                  <div class="team-item">
+                     <div class="team-item_img">
+                        <img src="styles/images/member-3.jpg" alt="">
+                     </div>
+                     <ul class="team-item_social-list">
+                        <li class="team-item_social-item"><a href="#"><img src="styles/images/Facebook_Logo.png"
+                                 width="9px" height="16px" alt=""></a></li>
+                        <li class="team-item_social-item"><a href="#"><img
+                                 src="styles/images/Twitter_Logo_Silhouette.png" width="17px" height="14px" alt=""></a>
+                        </li>
+                        <li class="team-item_social-item"><a href="#"><img src="styles/images/Google_Plus_Logo.png"
+                                 width="17px" height="16px" alt=""></a></li>
+                        <li class="team-item_social-item"><a href="#"><img src="styles/images/fa-linkedin.png"
+                                 width="14px" height="14px" alt=""></a></li>
+                     </ul>
+                     <div class="slide-controls-responsive">
+                           <button class="slider-button--left"></button>
+                           <button class="slider-button--right"></button>
+                        </div>
+                  </div>
+                  <div class="team-item_write-up">
+                     <h4>Shamim Mia</h4>
+                     <span>Sr. Web Developer</span>
+                  </div>
+               </div>
+               <div class="team-item_container">
+                  <div class="team-item">
+                     <div class="team-item_img">
+                        <img src="styles/images/member-4.jpg" alt="">
+                     </div>
+                     <ul class="team-item_social-list">
+                        <li class="team-item_social-item"><a href="#"><img src="styles/images/Facebook_Logo.png"
+                                 width="9px" height="16px" alt=""></a></li>
+                        <li class="team-item_social-item"><a href="#"><img
+                                 src="styles/images/Twitter_Logo_Silhouette.png" width="17px" height="14px" alt=""></a>
+                        </li>
+                        <li class="team-item_social-item"><a href="#"><img src="styles/images/Google_Plus_Logo.png"
+                                 width="17px" height="16px" alt=""></a></li>
+                        <li class="team-item_social-item"><a href="#"><img src="styles/images/fa-linkedin.png"
+                                 width="14px" height="14px" alt=""></a></li>
+                     </ul>
+                     <div class="slide-controls">
+                           <button class="slider-button--right"></button>
+                        </div>
+                        <div class="slide-controls-responsive">
+                           <button class="slider-button--left"></button>
+                           <button class="slider-button--right"></button>
+                        </div>
+                  </div>
+                  <div class="team-item_write-up">
+                     <h4>John Doe</h4>
+                     <span>Front-end Developer</span>
+                  </div>
+               </div>
+
             </div>
          </div>
       </section>
@@ -362,7 +656,7 @@
                         dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidulabore et
                         dolore
                         aliquyam erat, sed diam </p>
-                     <b>Read more</b>
+                     <a href="#">Read more</a>
                   </div>
                </div>
                <div class="blog-content_item">
@@ -386,7 +680,7 @@
                         dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidulabore et
                         dolore
                         aliquyam erat, sed diam </p>
-                     <b>Read more</b>
+                     <a href="#">Read more</a>
                   </div>
                </div>
             </div>
@@ -443,7 +737,8 @@
                   <li class="contact-info-item hotline">
                      <h4>Hotline (24x7)</h4>
                      <p>
-                        +65 0052 300, +65 88251 210 <br>
+                        +65 0052 300 <br>
+                        +65 88251 210 <br>
                         +88 01723 511 340
                      </p>
                   </li>
@@ -489,26 +784,44 @@
    </main>
 
    <!-- Main -->
-   
+
    <!-- Footer -->
 
-<footer class="main-footer">
-   <div class="container">
-      <div class="footer-content">
-         <ul class="social-list">
-            <li class="social-list-item"><a href="#"><img src="styles/images/fa-twitter.png" width="16px" height="12px" alt=""></a></li>
-            <li class="social-list-item"><a href="#"><img src="styles/images/fa-twitter.png" width="16px" height="12px" alt=""></a></li>
-            <li class="social-list-item"><a href="#"><img src="styles/images/fa-twitter.png" width="16px" height="12px" alt=""></a></li>
-            <li class="social-list-item"><a href="#"><img src="styles/images/fa-twitter.png" width="16px" height="12px" alt=""></a></li>
-         </ul>
-         <b class="copyright">© 2015 Startup, Designed by ShapedTheme</b>
+   <footer class="main-footer">
+      <div class="container">
+         <div class="footer-content">
+            <ul class="social-list">
+               <li class="social-list-item"><a href="#"><img src="styles/images/fa-twitter.png" width="16px"
+                        height="12px" alt=""></a></li>
+               <li class="social-list-item"><a href="#"><img src="styles/images/fa-twitter.png" width="16px"
+                        height="12px" alt=""></a></li>
+               <li class="social-list-item"><a href="#"><img src="styles/images/fa-twitter.png" width="16px"
+                        height="12px" alt=""></a></li>
+               <li class="social-list-item"><a href="#"><img src="styles/images/fa-twitter.png" width="16px"
+                        height="12px" alt=""></a></li>
+            </ul>
+            <b class="copyright">© 2015 Startup, Designed by ShapedTheme</b>
+         </div>
       </div>
-   </div>
 
-</footer>
+   </footer>
 
-<!-- / Footer -->
-   
+   <!-- / Footer -->
+
+   <!-- Vender scripts -->
+
+   <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"></script>
+   <script src="libs/owlCarousel2/owl.carousel.js"></script>
+
+
+   <!-- / Vender scripts -->
+   <!-- User scripts -->
+
+   <script src="js/main.js"></script>
+
+   <!-- / User scripts -->
+
 
 </body>
 
