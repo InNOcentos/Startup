@@ -50,18 +50,27 @@ $(document).ready(function () {
             items: 1,
             slidesshow: 1,
             center: true
+            
          },
-         600: {
-            items: 1,
-            slidesshow: 1
+         576: {
+            items: 2,
+            slidesshow: 2,
+            slideBy: 2
          },
-         700: {
-            items: 4,
-            slideBy: 4,
-
+         768: {
+            items: 3,
+            slideBy: 3,
+            slidesshow: 3,
+         },
+         992: {
+            items: 3,
+            slideBy: 3,
+            slidesshow: 3,
          },
          1200: {
-
+            items: 4,
+            slideBy: 4,
+            margin: 32.60,
          }
       }
    });
