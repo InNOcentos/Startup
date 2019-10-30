@@ -1,4 +1,5 @@
 // Mobile menu
+
 $(function headerMenu() {
 
    $('.mobile-menu').on('click',function(event) {
@@ -9,6 +10,7 @@ $(function headerMenu() {
 })
 
 // Get Started modal
+
 var modal = $('#myModal');
 var btn = $('#myBtn');
 var span = $('.close');
@@ -32,6 +34,7 @@ $(document).on('mouseup',function(event) {
 })
 
 // Slider OwlCarousel
+
 $(document).ready(function () {
    var team_slider = $('.team-slider');
    team_slider.owlCarousel({
