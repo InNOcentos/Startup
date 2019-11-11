@@ -85,6 +85,8 @@ a {
       height: 100%;
       position: relative;
       z-index: 10;
+      display: flex;
+      flex-direction: column;
    }
 
    &::before {
@@ -160,7 +162,7 @@ a {
    }
    
    .header-content {
-      height: 100%;
+      flex-grow: 1;
       display: flex;
       flex-direction: column;
       justify-content: center;
