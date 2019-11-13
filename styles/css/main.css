@@ -336,6 +336,7 @@ a {
               -o-transition: .2s;
               transition: .2s; }
               .main-header .container .main-navigation .mobile-menu .menu-btn span {
+                height: 100%;
                 display: -webkit-box;
                 display: -ms-flexbox;
                 display: flex;
@@ -344,8 +345,7 @@ a {
                 justify-content: center;
                 -webkit-box-align: center;
                 -ms-flex-align: center;
-                align-items: center;
-                height: 40px; }
+                align-items: center; }
             .main-header .container .main-navigation .mobile-menu .menu-active {
               -webkit-transform: rotate(90deg);
               -ms-transform: rotate(90deg);
